@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hill-2-cipher - Text Encryption</title>
+<link rel="stylesheet" href="static/style.css">
+
+<script src="static/script.js"></script>
+</head>
+<body>
+<div class="container">
+    <h1>Hill-2-cipher - Text Encryption</h1>
+    <p>Encrypt your text using Hill-2-cipher encryption.</p>
+    <div class="form-group">
+        <label for="input-matrix">Enter your 2x2 matrix:</label><br>
+        <input type="number" id="a11" placeholder="a11"> <input type="number" id="a12" placeholder="a12"><br>
+        <input type="number" id="a21" placeholder="a21"> <input type="number" id="a22" placeholder="a22"><br>
+    </div>
+    <textarea id="input-text" placeholder="Enter your text to encrypt"></textarea>
+    <button onclick="encryptText()">Encrypt</button>
+    <div class="result">
+        <label for="output-text">Encrypted Text:</label>
+        <textarea id="output-text" readonly></textarea>
+    </div>
+</div>
+</body>
+</html>
